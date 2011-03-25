@@ -28,8 +28,8 @@ public class TYPEFactory {
 	/**
 	 * Translates the "type" property of the <code>org.codehaus.jackson.JsonNode<code> 
 	 * passed into one of the types defined in the paragraph 5.1 of the JSON schema specification.
-	 * 
-	 * @param the node containing the "type" property to translate.
+	 *
+	 * @param node the node containing the "type" property to translate.
 	 * @return the type as defined by the JSON Schema specification
 	 */
 	public static TYPE getType(JsonNode node) {
@@ -83,8 +83,8 @@ public class TYPEFactory {
 	 * <br/>
 	 * This is supposed to be used when the <code>getType(JsonNode node)</code> method
 	 * returns TYPE.UNION.<br/>
-	 * 
-	 * @param the node containing the "type" property to translate.
+	 *
+	 * @param node the node containing the "type" property to translate.
 	 * @return the type as defined by the JSON Schema specification
 	 */
 	public static TYPE[] getUnionType(JsonNode node) {
